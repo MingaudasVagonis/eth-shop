@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "body-parser": "^1.19.0",
+    "ethers": "^4.0.40",
+    "express": "^4.17.1",
+    "websocket": "^1.0.30"
+  },
+  "scripts": {
+    "dev-start": "nodemon server.js",
+    "ethserver-initial": "mkdir -p ganachedb && ganache-cli --db ganachedb -p 8545 --account=\"0xbfe038810d51b8a788e5f63d2a0822d1f8ef712a7acbbf9877013efb3c5f5514,1000000000000000000000000000000000000000\"  --account=\"0xb07210851b10f884f5b4e57a8e76e717cc5cd9b496801cb93dac380747239b0f,1000000000000000000000000000000000000000\"   --account=\"0x46c855cb4a30c5630b5884fde176fe6d4b2c26f12c8607452c72ca31c537120e,1000000000000000000000000000000000000000\"",
+    "ethserver": "ganache-cli --db ganachedb -p 8545 ",
+    "start": "nodemon ./server.js --exec babel-node --presets babel-parse",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "http-server": "^0.9.0",
+    "nodemon": "^1.19.4",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

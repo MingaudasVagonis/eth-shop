@@ -1,0 +1,8 @@
+# Folders that match name:
+node_modules/
+build/
+.git/ 
+ganachedb/
+# Files that extend: 
+**/.log
+**/.DS_Store
