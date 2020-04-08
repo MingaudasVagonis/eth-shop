@@ -4,6 +4,7 @@
 
 ![Example](https://media.giphy.com/media/dTzHBqzWFrTcL9C1xD/giphy.gif)
 
+Project is purely for demonstration purposes.
 ### Installation
 ```
 $ yarn global add ganache-cli
